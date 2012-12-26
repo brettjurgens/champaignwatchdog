@@ -56,9 +56,7 @@ def updateHeadlines():
 
 @app.route('/')
 def index():
-    weather = updateWeather()
-    cumtd = updateCUMTD()
-    return render_template('home.html', weather=weather, cumtd=str(cumtd))
+    return render_template('home.html')
 
 if __name__ == '__main__':
     app.run()

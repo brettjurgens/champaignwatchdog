@@ -94,7 +94,7 @@ updateDateTime = function() {
   }
 
   $("#time").text(h + ":" + m);
-  months = new Array('January', 'February', 'March', 'April', 'May', 'June', 'Jully', 'August', 'September', 'October', 'November', 'December');
+  months = new Array('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December');
   days = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
 
   $("#date").text(days[date.getDay()] + ", " + months[date.getMonth()] + " " + date.getDate())

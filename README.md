@@ -54,4 +54,5 @@ You'll need images for the weather. I used the HDWeather Icons from Beautiful Wi
 - snow.png
 - sunny.png
 - tstorms.png
+
 I think that's it.
