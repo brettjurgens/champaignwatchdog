@@ -29,7 +29,7 @@ Stuff Used that I Didn't Make
 
 Future
 ------
-I don't really have any more ideas for this... I might finish the weather underground library that I started
+I probably need to fix up some CSS stuff, but because of the holiday season there haven't been buses running. I also might finish the weather underground library that I started. We'll see...
 
 Reqs
 ----
