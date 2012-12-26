@@ -1,0 +1,4 @@
+*.pyc
+*.png
+*.psd
+static/weather/
