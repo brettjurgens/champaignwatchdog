@@ -9,12 +9,14 @@ It was designed for an 8" monitor that I found and my raspberry pi. It's written
 Setup
 -----
 In a file (config.py) define the constants (API Keys, Feed URLs, Bus Stops), like below:
-
-    # file: config.py
-    BUS_STOPS = {"GRGIKE": "Gregory at Ikenberry", "4THGRG": "Fourth and Gregory"}
-    CUMTD_API_KEY = "123123..." # cumtd API Key
-    WUND_API_KEY = "123123..."  # Weather Underground API Key
-    FEEDS = ["https://www.google.com/news?pz=1&cf=all&ned=us&hl=en&output=rss", "http://www.theverge.com/rss/index.xml"]
+    
+```python
+# file: config.py
+BUS_STOPS = {"GRGIKE": "Gregory at Ikenberry", "4THGRG": "Fourth and Gregory"}
+CUMTD_API_KEY = "123123..." # cumtd API Key
+WUND_API_KEY = "123123..."  # Weather Underground API Key
+FEEDS = ["https://www.google.com/news?pz=1&cf=all&ned=us&hl=en&output=rss", "http://www.theverge.com/rss/index.xml"]
+```
 
 
 Stuff Used that I Didn't Make 
@@ -31,7 +33,7 @@ I don't really have any more ideas for this... I might finish the weather underg
 
 Reqs
 ----
-You'll need images for the weather. I used the HDWeather Icons from Beautiful Widgets. You'll need to rename stuff though, here are all the files you'll need (and their night equivalents, with the prefix nt_):
+You'll need images for the weather. I used the HDWeather Icons from Beautiful Widgets. You'll need to rename stuff though, here are all the files you'll need (and their night equivalents, with the prefix nt_). Store them in static/weather:
 - chanceflurries.png
 - chancerain.png
 - chancesleet.png
