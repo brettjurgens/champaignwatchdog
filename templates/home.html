@@ -1,0 +1,38 @@
+<!doctype html>
+<head>
+  <title>Champaign Watchdog</title>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="/static/scriptypoo.js"></script>
+  <script src="/static/jquery.ticker.js"></script>
+  <link href="/static/main.css" rel="stylesheet" type="text/css" />
+  <link href="/static/ticker-style.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript">
+  $(function(){
+    updateHeadlines();
+    updateDateTime();
+    updateWeather();
+    updateCUMTD();
+  })
+  </script>
+</head>
+<body>
+  <div id="buses">
+    <div id="busestitle" class="title">Upcoming Buses</div>
+    <div id="buslist"></div>
+  </div>
+  <div id="weather">
+    <div id="weathertitle" class="title">Weather</div>
+    <div id="weathertext" class="weathershift">
+      <div id="weathertemp"><span id="number" class="bigtext"></span><span class="bigtext">&deg;</span>F</div>
+      <div id="weatherdesc"></div>
+    </div>
+    <div id="icon" class="weathershift">
+      <img id='weathericon' />
+    </div>
+  </div>
+  <div id="datetime">
+    <div id="datetimetitle" class="title">Date/Time</div>
+    <div id="date"></div>
+    <div id="time" class="bigtext"></div>
+  </div>
+</body>

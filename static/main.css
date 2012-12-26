@@ -1,0 +1,109 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  line-height: normal;
+  padding: 20px 0;
+  margin: 0;
+}
+.bigtext {
+  font-weight: 500;
+  font-size: 92px;
+}
+#weathertemp {
+  font-size: 60px;
+}
+#weatherdesc {
+  font-size: 20px;
+  margin-top: -10px;
+}
+
+#weathertext {
+  position: absolute;
+  /*right: 195px;*/
+  top: 35px;
+  z-index: 999;
+}
+
+#weathericon {
+  max-width: 230px;
+  min-height: 190px;
+}
+
+#icon {
+  position: absolute;
+  left: 250px;
+  z-index:0;
+}
+#date {
+  font-size: 32px;
+}
+#time {
+  margin-top: -10px;
+}
+
+#weather {
+  position: absolute;
+  left: 50%;
+}
+#datetime {
+  position: absolute;
+  left : 50%;
+  top: 50%;
+}
+.hidden {
+  display: none;
+}
+.title {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #666;
+}
+.weathershift {
+  margin-top: -20px;
+}
+#buses {
+  position: absolute;
+  margin-left: 25px;
+}
+div[id*="route"] {
+  width: 350px;
+  height: 50px;
+  background-color: #aaa;
+  position: relative;
+}
+.headsign {
+  position: absolute;
+  left: 50px;
+  top: 5px;
+  font-size: 22px;
+  color: #fff;
+  font-weight: 400;
+}
+.time {
+  position: absolute;
+  top: 4px;
+  font-size: 32px;
+  right: 10px;
+  color: #fff;
+}
+.min {
+  font-size:20px;
+}
+.stop {
+  font-size: 13px;
+  position: absolute;
+  left: 50px;
+  top: 27px;
+  color: #eee;  
+}
+div[class*="box-"] {
+  width: 39px;
+  height: 39px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  border: 1px solid #888;
+}
+.nobus {
+  font-size: 24px;
+}
