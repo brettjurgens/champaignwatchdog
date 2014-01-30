@@ -3,3 +3,4 @@ config.py
 *.png
 *.psd
 static/weather/
+venv

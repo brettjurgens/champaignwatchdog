@@ -11,7 +11,7 @@ Built for a little display in my house, across from the Ike.
 Displays bus times/weather
 """
 
-@app.route('/updateCUMTD', methods=["GET", "POST"])
+@app.route('/updateCUMTD', methods=["POST"])
 def updateCUMTD():
     api = cumtd.CumtdApi(CUMTD_API_KEY)
     results = []
@@ -25,7 +25,7 @@ def updateCUMTD():
     results = sorted(results, key=lambda bus: bus["expected"])
     return jsonify({"results" : results})
 
-@app.route('/updateWeather', methods=["GET","POST"])
+@app.route('/updateWeather', methods=["POST"])
 def updateWeather():
     api = pywunderground.WeatherUnderground(WUND_API_KEY)
     conditions = api.conditions('61820')["current_observation"]
@@ -43,7 +43,7 @@ def updateWeather():
 
     return jsonify(ret_hash)
 
-@app.route('/updateHeadlines', methods=["GET","POST"])
+@app.route('/updateHeadlines', methods=["POST"])
 def updateHeadlines():
     headlines = []
     for feed in FEEDS:
