@@ -28,9 +28,6 @@ def updateCUMTD():
 @app.route('/updateWeather', methods=["POST"])
 def updateWeather():
     api = pywunderground.WeatherUnderground(WUND_API_KEY)
-
-    print api.conditions('61820')
-
     conditions = api.conditions('61820')["current_observation"]
     ret_hash = {}
     ret_hash["temp"] = conditions["temp_f"]
