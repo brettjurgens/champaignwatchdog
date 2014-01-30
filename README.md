@@ -8,14 +8,13 @@ It was designed for an 8" monitor that I found and my raspberry pi. It's written
 
 Setup
 -----
-In a file (config.py) define the constants (API Keys, Feed URLs, Bus Stops), like below:
-    
-```python
-# file: config.py
-BUS_STOPS = {"GRGIKE": "Gregory at Ikenberry", "4THGRG": "Fourth and Gregory"}
-CUMTD_API_KEY = "123123..." # cumtd API Key
-WUND_API_KEY = "123123..."  # Weather Underground API Key
-FEEDS = ["https://www.google.com/news?pz=1&cf=all&ned=us&hl=en&output=rss", "http://www.theverge.com/rss/index.xml"]
+This uses environment variables for the stops, feeds and api keys.
+```bash
+# file: .env
+BUS_STOPS='{"GRGIKE": "Gregory at Ikenberry", "4THGRG": "Fourth and Gregory"}'
+CUMTD_API_KEY=123123... # cumtd API Key
+WUND_API_KEY=123123...  # Weather Underground API Key
+FEEDS='["https://www.google.com/news?pz=1&cf=all&ned=us&hl=en&output=rss", "http://www.theverge.com/rss/index.xml"]'
 ```
 
 
@@ -26,33 +25,11 @@ Stuff Used that I Didn't Make
 - FeedParser ([kurtmckee/feedparser](/kurtmckee/feedparser))
 - Flask ([mitsuhiko/flask](/mitsuhiko/flask))
 - Requests ([kennethreitz/requests](/kennethreitz/requests))
+- HDWeather Icons from Beautiful Widgets
 
-Future
-------
-I probably need to fix up some CSS stuff, but because of the holiday season there haven't been buses running. I also might finish the weather underground library that I started. We'll see...
-
-Reqs
-----
-You'll need images for the weather. I used the HDWeather Icons from Beautiful Widgets. You'll need to rename stuff though, here are all the files you'll need (and their night equivalents, with the prefix nt_). Store them in static/weather:
-- chanceflurries.png
-- chancerain.png
-- chancesleet.png
-- chancesnow.png
-- chancetstorms.png
-- clear.png
-- cloudy.png
-- cloudyrain.png
-- flurries.png
-- fog.png
-- hazy.png
-- mostlycloudy.png
-- mostlysunny.png
-- partlycloudy.png
-- partlysunny.png
-- rain.png
-- sleet.png
-- snow.png
-- sunny.png
-- tstorms.png
-
-I think that's it.
+Running
+-------
+This branch is meant to be run on heroku, so to run locally, use foreman.
+```bash
+$ forman start
+```
