@@ -28,5 +28,5 @@ class WeatherUnderground:
 
         # raise an error if the http response code was not ok
         r.raise_for_status()
-        return r.json
+        return r.json()
 

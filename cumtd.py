@@ -114,5 +114,5 @@ class CumtdApi:
         r = requests.get(self.url + api_function, params=params)
         # raise an error if the http response code was not ok
         r.raise_for_status()
-        return r.json
+        return r.json()
 
