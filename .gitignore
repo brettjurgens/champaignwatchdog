@@ -1,7 +1,5 @@
 config.py
 *.pyc
-*.png
 *.psd
-static/weather/
 venv
 .env

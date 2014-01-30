@@ -1,0 +1,3 @@
+author=Toupetibou
+url=
+skinname=WeatherHD
