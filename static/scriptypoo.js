@@ -50,7 +50,7 @@ function processCUMTDUpdate(data) {
       $("<div id='route" + i + "' class='" + route_id + "'></div>").appendTo("#buslist");
       $("<div class='box-" + i + "'></div>").appendTo("#route" + i);
       $("<div id='info" + i + "' class='businfo'></div>").appendTo("#route" + i);
-      $("<div class='headsign'>" + bus.headsign + " </div>").appendTo("#info" + i);
+      $("<div class='headsign'>" + bus.headsign.replace(' EXPRESS', '').replace('HOPPER', '').replace(' WEEKEND', '').replace(' E-14', '').replace(' Gerty', '') + " </div>").appendTo("#info" + i);
       $("<div class='stop'>" + bus.bus_stop + " </div>").appendTo("#info" + i);
       $("<div class='time'><span class='expected' min='" + bus.expected_mins + "'>" + bus.expected_mins + "</span><span class='min'>min</span></div>").appendTo("#info" + i);
       $('.box-' + i).css('background-color', '#' + bus.route.route_color);
