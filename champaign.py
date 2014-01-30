@@ -1,9 +1,13 @@
-import cumtd, pywunderground, feedparser, random
+import cumtd, pywunderground, feedparser, random, os, json
 from flask import Flask, jsonify, render_template, url_for
 
 app = Flask(__name__)
 
-from config import *
+# For heroku...
+BUS_STOPS = json.loads(os.environ['BUS_STOPS'])
+CUMTD_API_KEY = os.environ['CUMTD_API_KEY']
+WUND_API_KEY = os.environ['WUND_API_KEY']
+FEEDS = json.loads(os.environ['FEEDS'])
 
 """
 Built for a little display in my house, across from the Ike.
